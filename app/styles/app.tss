@@ -10,12 +10,10 @@
 	// "Button[platform=android]": { backgroundColor: 'transparent' }
 	// "MenuItem[platform=android]": { showAsAction: Titanium.Android.SHOW_AS_ACTION_ALWAYS }
 	// "TextField[platform=android]": { hintTextColor: '#c7c7cd' }
-	
+
 	// ".scroller": { contentWidth: '100%', layout: 'vertical', scrollType: 'vertical' }
 
-	// ".ai": { height: Titanium.UI.SIZE, top: 20, bottom: 20 }
-	// ".ai[platform=ios]": { style: Titanium.UI.iPhone.ActivityIndicatorStyle.DARK }
-	// ".ai[platform=android]": { style: Titanium.UI.ActivityIndicatorStyle.DARK }
+	// ".ai": { /* height: Titanium.UI.SIZE, top: 20, bottom: 20, */ style: Titanium.UI.ActivityIndicatorStyle.DARK }
 
 	// ".lv": { backgroundColor: 'transparent', separatorColor: '#d6d6d6', separatorInsets: { left: 0, right: 0 } }
 	// // ".lv-noseparator": { separatorColor: 'transparent' }
@@ -29,9 +27,14 @@
 	// ".txt-wrapper": {  }
 	// ".txt-wrapper[platform=ios]": { clipMode: Ti.UI.iOS.CLIP_MODE_ENABLED }
 		// ".txt": { color: '#000', font: { fontSize: 14 }, backgroundColor: 'transparent' }
-		// ".txt-textfield": { height: 52 }
-		// ".txt-textfield[platform=ios]": { left: 0, right: 0, paddingLeft: 0, paddingRight: 0, clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ONFOCUS }
-		// ".txt-textfield[platform=android]": { left: -4, right: -4, hintTextColor: '#777' }
-		// ".txt-textarea": { height: '100%' }
-		// ".txt-textarea[platform=ios]": { left: -4, right: -4 }
-		// ".txt-textarea[platform=android]": { left: 0, right: 0, hintTextColor: '#777' }
+		// ".txt-textfield": { height: 52, left: 10, right: 10 }
+		// ".txt-textfield[platform=ios]": { paddingLeft: 0, paddingRight: 0, clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ONFOCUS }
+		// ".txt-textfield[platform=android]": { hintTextColor: '#777' }
+		// ".txt-textarea": { height: '100%', left: 10, right: 10, suppressReturn: false }
+		// ".txt-textarea[platform=ios]": {  }
+		// ".txt-textarea[platform=android]": { hintTextColor: '#777' }
+		// ".txt-textfield-next": { returnKeyType: Titanium.UI.RETURNKEY_NEXT }
+		// ".txt-textfield-done": { returnKeyType: Titanium.UI.RETURNKEY_JOIN }
+		// ".txt-textfield-email": { keyboardType: Titanium.UI.KEYBOARD_EMAIL }
+		// ".txt-textfield-number": { keyboardType: Titanium.UI.KEYBOARD_NUMBERS_PUNCTUATION }
+		// ".txt-textfield-password": { passwordMask: true }
