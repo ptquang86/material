@@ -17,16 +17,13 @@
 	
 	// var IsScreen320 = false, //  640 × 960
 		// IsScreen375 = false, //  750 × 1334
-		// IsScreen414 = false, // 1242 × 2208
-		// IsScreenBig = false; // > 1242
-	// if (platformWidth <= 320) {
-		// IsScreen320 = true;
-	// } else if (platformWidth <= 375) {
-		// IsScreen375 = true;
-	// } else if (platformWidth <= 414) {
+		// IsScreen414 = false; // 1242 × 2208
+	// if (platformWidth >= 414) {
 		// IsScreen414 = true;
-	// } else {
-		// IsScreenBig = true;
+	// } else if (platformWidth >= 375) {
+		// IsScreen375 = true;	
+	// } else if (platformWidth >= 320) {
+		// IsScreen320 = true;
 	// }
 	
 	// var originalWidth = 414;
@@ -37,13 +34,9 @@
   		// IsScreen320: IsScreen320,
   		// IsScreen375: IsScreen375,
   		// IsScreen414: IsScreen414,
-  		// IsScreenBig: IsScreenBig,
   		// ScreenScale: ScreenScale,
-  		// Win: {
-  			// Short: platformHeight <= 480,
-  			// Width: platformWidth,
-  			// Height: platformHeight
-  		// }
+  		// platformWidth: platformWidth,
+  		// platformHeight: platformHeight
   	};
   	
 })();
