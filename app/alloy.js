@@ -39,5 +39,7 @@
   		// platformHeight: platformHeight
   	};
   	
+  	Ti.API.info('=== Alloy.Globals.UI ' + JSON.stringify( Alloy.Globals.UI ));
+  	
 })();
 // */
