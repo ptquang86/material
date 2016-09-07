@@ -27,16 +27,52 @@
         <item name="android:headerBackground">#E50000</item>
     </style>
     
-    <!-- theme: transparent action-bar -->
-    <style name="TransparentActionBar" parent="@style/Theme.AppCompat.Light.DarkActionBar">
-		<item name="android:actionBarStyle">@style/ThemeActionBar</item>
+    <!-- theme: transparent action-bar dark -->
+	<style name="TransparentActionBarDark" parent="@style/Theme.AppCompat">
+		<item name="android:actionBarTheme">@style/ActionBarThemeDark</item>
+		<item name="android:actionBarStyle">@style/ActionBarStyleDark</item>
 		<item name="android:windowActionBarOverlay">true</item>
-		<item name="actionBarStyle">@style/ThemeActionBar</item>
+		<item name="actionBarTheme">@style/ActionBarThemeDark</item>
+		<item name="actionBarStyle">@style/ActionBarStyleDark</item>
 		<item name="windowActionBarOverlay">true</item>
 	</style>
-	<style name="ThemeActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
-        <item name="android:background">@null</item>
-        <item name="background">@null</item>
+	<style name="ActionBarThemeDark" parent="@style/ThemeOverlay.AppCompat.ActionBar">       
+	    <item name="colorControlNormal">#646464</item>
+	</style>
+	<style name="ActionBarStyleDark" parent="@style/Widget.AppCompat.Light.ActionBar">
+	    <item name="elevation">0dp</item>      
+	    <item name="titleTextStyle">@style/TitleTextStyleDark</item>
+	    <item name="subtitleTextStyle">@style/SubtitleTextStyleDark</item>
+	</style>
+	<style name="TitleTextStyleDark" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+	    <item name="android:textColor">#646464</item>
+	</style>
+	<style name="SubtitleTextStyleDark" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+	    <item name="android:textColor">#646464</item>
+	</style>
+	
+	<!-- theme: transparent action-bar light -->
+	<style name="TransparentActionBarLight" parent="@style/Theme.AppCompat">
+		<item name="android:actionBarTheme">@style/ActionBarThemeLight</item>
+		<item name="android:actionBarStyle">@style/ActionBarStyleLight</item>
+		<item name="android:windowActionBarOverlay">true</item>
+		<item name="actionBarTheme">@style/ActionBarThemeLight</item>
+		<item name="actionBarStyle">@style/ActionBarStyleLight</item>
+		<item name="windowActionBarOverlay">true</item>
+	</style>
+	<style name="ActionBarThemeLight" parent="@style/ThemeOverlay.AppCompat.ActionBar">       
+	    <item name="colorControlNormal">#646464</item>
+	</style>
+	<style name="ActionBarStyleLight" parent="@style/Widget.AppCompat.Light.ActionBar">
+	    <item name="elevation">0dp</item>      
+	    <item name="titleTextStyle">@style/TitleTextStyleLight</item>
+	    <item name="subtitleTextStyle">@style/SubtitleTextStyleLight</item>
+	</style>
+	<style name="TitleTextStyleLight" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+	    <item name="android:textColor">#646464</item>
+	</style>
+	<style name="SubtitleTextStyleLight" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+	    <item name="android:textColor">#646464</item>
 	</style>
 	
 </resources>
