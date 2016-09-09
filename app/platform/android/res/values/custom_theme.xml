@@ -27,6 +27,19 @@
         <item name="android:headerBackground">#E50000</item>
     </style>
     
+    <!-- theme: material theme for Ti.DrawerLayout -->
+    <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="@style/MaterialTheme">
+    	<item name="android:textColorPrimary">#ffffff</item>
+    	<item name="android:background">#3a4450</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+	    <item name="spinBars">true</item>
+	    <item name="color">#ffffff</item>
+	</style>
+    
     <!-- theme: transparent action-bar dark -->
 	<style name="TransparentActionBarDark" parent="@style/Theme.AppCompat">
 		<item name="android:textColorPrimary">#ffffff</item>
